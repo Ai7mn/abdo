@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>My Login Page</title>
+       
+    
+       <link rel='stylesheet' type='text/css' media='screen' href='mycss1.css'>
+       
+ <script>
+function validateForm(){
+	if(document.getElementById('user').value == ''){
+		alert ('Username is compulsory');
+		
+	}
+	else if (document.getElementById('pass').value == ''){
+		alert ('You entered an invalid password');
+		
+	}
+	else {
+		//everything is valid
+		document.getElementById('form').submit();
+	}
+}
+
+function validateForm2(){
+	if(document.getElementById('user').value == ''){
+		alert ('Username is compulsory');
+		
+	}
+	else if (document.getElementById('pass').value == ''){
+		alert ('You entered an invalid password');
+		
+	}
+	else {
+		//everything is valid
+		document.getElementById('form2').submit();
+	}
+}
+</script>
+       
+   <head/>
+
+
+    <body>
+    <div class ='contain'>
+    <h1>Log in </h1>
+    <hr>
+    
+    <center>
+    
+    <form id ='form' action = 'login.jsp'   method = 'post'>
+     <p> Username: <input type= 'text' name='username' id='user' /></p>
+     <p>Password:  <input type='password' name= 'password' id='pass'/></p>
+     
+ 
+     <p>
+     <button id='btLogin' type = 'button' onclick= "validateForm()" class='contain Btn'>  Login   </button>
+        <button type ='reset' class='contain Btn'>  Reset      </button>
+       <a href ="Add.html"><button type = 'button' class='contain Btn' >  Add Student  </button></a>
+       </p>
+     
+     <form/>
+     
+     
+   
+     
+     
+     
+     <center/>
+     </div>
+     </body>
+</html>
+
+             
